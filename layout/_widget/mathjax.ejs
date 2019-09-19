@@ -1,5 +1,5 @@
-<% if (window.mathjax.enable) { %>
-    <% if (!window.mathjax.per_page || (page.total || page.mathjax)) { %>
+<% if (config.mathjax.enable) { %>
+    <% if (!config.mathjax.per_page || (page.total || page.mathjax)) { %>
       <!-- MathJax support START -->
       <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -19,7 +19,7 @@
           }
         });
       </script>
-      <script type="text/javascript" src="<%- window.mathjax.cdn %>"></script>
+      <script type="text/javascript" src="<%- config.mathjax.cdn %>"></script>
       <!-- MathJax support END -->
     <% } %>
   <% } %>
